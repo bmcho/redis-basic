@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: redis-cache
+
+  session:
+    store-type: redis
+
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+
+  datasource:
+    url: "jdbc:mysql://127.0.0.1:3307/sns"
+    username: root
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
